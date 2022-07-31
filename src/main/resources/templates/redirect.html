@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Redirecting</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --red: #FF4A57;
+            --bg1: #23263a;
+            --bg2: #1F2235;
+            --bgCon: #1F2937;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bgCon);
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        #admin{
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="flex flex-col justify-center items-center mt-20 ">
+    <h1 class="text-white text-3xl font-bold mb-5">Redirect nicht gefunden!</h1>
+    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+         width="184.000000pt" height="182.000000pt" viewBox="0 0 183.000000 182.000000"
+         preserveAspectRatio="xMidYMid meet">
+
+        <g transform="translate(0.000000,182.000000) scale(0.100000,-0.100000)"
+           fill="#FF4A57" stroke="none">
+            <path d="M825 1810 c-103 -11 -190 -36 -283 -80 -106 -50 -161 -88 -246 -169
+-291 -279 -362 -687 -184 -1056 24 -50 41 -72 59 -79 42 -14 78 0 96 39 16 34
+16 35 -25 123 -58 121 -75 208 -70 357 4 101 9 134 35 208 39 110 81 181 161
+268 228 247 601 310 902 153 181 -94 321 -271 376 -474 22 -82 25 -281 5 -360
+-71 -279 -285 -492 -561 -561 -79 -20 -278 -17 -360 4 -82 22 -179 67 -242
+112 -52 38 -82 43 -115 20 -24 -17 -38 -64 -28 -95 14 -44 215 -151 354 -187
+130 -34 297 -36 424 -5 311 76 555 303 659 612 32 93 32 100 32 270 0 170 0
+177 -32 270 -50 149 -112 250 -222 361 -99 101 -182 157 -307 209 -120 50
+-294 75 -428 60z"/>
+            <path d="M863 1386 c-31 -27 -30 -13 -25 -389 2 -195 2 -198 27 -222 43 -44
+113 -24 134 37 17 49 15 500 -3 543 -25 59 -84 73 -133 31z"/>
+            <path d="M867 560 c-33 -26 -41 -63 -22 -101 41 -79 155 -51 155 38 0 70 -78
+106 -133 63z"/>
+        </g>
+    </svg>
+    <p class="pl-20 pr-20 mt-20 text-gray-400">Die angegeben URL wurde nicht gefunden!
+        Überüfe die URL oder wende dich an den Support im
+        <a class="text-red-500" th:href="@{/discord}">Discord</a></p>
+</div>
+
+<a class="border-dotted border-2 border-sky-500 rounded text-sky-600 p-1 hover:text-sky-800" id="admin" th:href="@{/settings}">Admin-Login</a>
+
+<p class="text-white fixed bottom-0 left-0">Made with ❤️ by <a href="https://primeapi.de">PrimeAPI</a> </p>
+
+
+</body>
+</html>
